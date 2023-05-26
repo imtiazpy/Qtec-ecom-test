@@ -1,14 +1,20 @@
 from django.db import models
 from django.utils.translation import gettext as _
 
-from config.common_fields import Common
+from common.models import NameTimeStamp
 
 
+class Category(NameTimeStamp):
+    
+    def __str__(self):
+        return f'{self.id}-{self.name}'
 
-class Category(Common):
-    pass
+
+class Brand(NameTimeStamp):
+    
+
+    def __str__(self):
+        return f'{self.id}-{self.name}'
 
 
-class Brand(Common):
-    pass
 

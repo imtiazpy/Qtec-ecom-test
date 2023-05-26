@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+  <!-- Top banner -->
+  <header>
+    <img id="banner" src="{% static 'images/GadgetPointBanner.png' %}" width="100%" alt="Banner">
+  </header>
+
+  <!-- Main section -->
+  <main>
+    <div class="container">
+      <!-- Multi-filter section -->
+      <aside>
+        {% include 'products/include/aside.html' %}
+      </aside>
+
+      <!-- Product listing section -->
+      
+      <section id="product-list">
+        <div class="info">
+          <p>YEARPHONE has 67 products</p>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <script src="{% static 'js/index.js' %}" defer></script>
+
+  <!-- Footer section -->
+  <footer>
+
+  </footer>
+
+
+
+</body>
+
+</html>

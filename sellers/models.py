@@ -1,5 +1,8 @@
 from django.db import models
-from config.common_fields import Common
+from common.models import NameTimeStamp
 
-class Seller(Common):
-    pass
+
+class Seller(NameTimeStamp):
+    
+    def __str__(self):
+        return f'{self.id}-{self.name}'
