@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+  <!-- Top banner -->
+  <header>
+    <img id="banner" src="{% static 'images/GadgetPointBanner.png' %}" width="100%" alt="Banner">
+  </header>
+
+  <!-- Main section -->
+  <main>
+    <div class="container">
+      <!-- Multi-filter section -->
+      <aside>
+        {% include 'include/aside.html' %}
+      </aside>
+
+      <!-- Product listing section -->
+      <section id="product-list">
+        <div class="count-sort">
+
+          <!-- Product count at the top of product listing -->
+          <div class="product-count">
+            {% if product_count %}
+              <p>{{ product_count }} products found</p>
+            {% else %}
+              <p>No products found</p>
+            {% endif %}
+          </div>
+
+          <!-- Sorting -->
+          <div class="sort">
+            <form method="GET" action="{% url 'product-list' %}">
+              <label for="sort-by">Sort By:</label>
+              <select name="sort_by" id="sort-by">
+                <option value="" {% if selected_sort == '' %}selected{% endif %}>Default</option>
+                <option value="name" {% if selected_sort == 'name' %}selected{% endif %}>Name</option>
+                <option value="price" {% if selected_sort == 'price' %}selected{% endif %}>Price</option>
+              </select>
+              <button type="submit">Sort</button>
+            </form>
+          </div>
+
+        </div>
+        
+
+        <!-- Listing products -->
+        <div class="products">
+          {% for product in products %}
+
+          <div class="product">
+            <div class="img-wrapper">
+              <img src="{{product.photo.url}}" width="100%" alt="product image">
+            </div>
+            <p>{{product.name}}</p>
+            <p class="price">BDT-{{product.price}}</p>
+            <div class="btn-wrapper">
+              <button class='btn primary'>Buy Now</button>
+              <button class='btn secondary'>ADD TO CART</button>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+
+  <!-- Footer section -->
+  <footer>
+
+  </footer>
+
+  <script src="{% static 'js/filters.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<div class="filter-section">
+  <form method="GET" action="">
+    <!-- Price range filter -->
+    <div class="filter-option">
+      <h4>Price</h4>
+      <div class="price-range">
+        <input type="number" value="{% if min_price %}{{ min_price }}{% endif %}" name="min_price" placeholder="Min">
+        <span>to</span>
+        <input type="number" value="{% if max_price %}{{ max_price }}{% endif %}" name="max_price" placeholder="Max">
+
+        <button type="submit">Go</button>
+
+      </div>
+    </div>
+
+    <!-- Brand filter -->
+    <div class="filter-option">
+      <h4>Brand</h4>
+      <div class="filter-items">
+        {% for brand in brands %}
+        <div class="filter-item">
+          <input type="checkbox" name="brand" value="{{ brand.id }}" {% if brand.id in selected_brands %}checked{% endif %}>
+          <label>{{ brand.name }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <span class="view-more">View All</span>
+    </div>
+
+    <!-- Category filter -->
+    <div class="filter-option">
+      <h4>Category</h4>
+      <div class="filter-items">
+        {% for category in categories %}
+        <div class="filter-item">
+          <input type="checkbox" name="category" value="{{ category.id }}" {% if category.id in selected_categories %}checked{% endif %}>
+          <label>{{ category.name }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <span class="view-more">View All</span>
+    </div>
+
+    <!-- Product type filter -->
+    <div class="filter-option">
+      <h4>Product Type</h4>
+      <div class="filter-items">
+        {% for product_type in product_types %}
+        <div class="filter-item">
+          <input type="checkbox" name="type" value="{{ product_type.0 }}" {% if product_type.0 in selected_product_types %}checked{% endif %}>
+          <label>{{ product_type.1 }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <span class="view-more">View All</span>
+    </div>
+
+
+    <!-- Seller filter -->
+    <div class="filter-option">
+      <h4>Sellers</h4>
+      <div class="filter-items">
+        {% for seller in sellers %}
+        <div class="filter-item">
+          <input type="checkbox" name="seller" value="{{ seller.id }}" {% if seller.id in selected_sellers %}checked{% endif %}>
+          <label>{{ seller.name }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <span class="view-more">View All</span>
+    </div>
+
+    <!-- Warranty filter -->
+    <div class="filter-option">
+      <h4>Warranty</h4>
+      <div class="filter-items">
+        {% for warranty_value in warranty_values %}
+        <div class="filter-item">
+            <input type="checkbox" name="warranty" value="{{ warranty_value }}" {% if warranty_value in selected_warranty %}checked{% endif %}>
+            <label>{{ warranty_value }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <span class="view-more">View All</span>
+    </div>            
+  </form>
+</div>
