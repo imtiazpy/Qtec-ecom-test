@@ -1,0 +1,208 @@
+[
+  {
+    "model": "products.Product",
+    "pk": 1,
+    "fields": {
+      "name": "Dell Laptop model-xyz-corei7ssd500",
+      "category": 1,
+      "type": "ELECTRONICS",
+      "price": 24000,
+      "photo": "images/dell-laptop-1.jpg",
+      "brand": 3,
+      "warranty": "2 Years Warranty",
+      "seller": 1,
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 2,
+    "fields": {
+      "name": "HP Laptop model-zyx-corei7ssd500",
+      "category": 1,
+      "type": "ELECTRONICS",
+      "price": 38000,
+      "photo": "images/hp-laptop.png",
+      "brand": 2,
+      "warranty": "2 Years Warranty",
+      "seller": 1,
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 3,
+    "fields": {
+      "name": "Asus Laptop-vivobook 15-15.6",
+      "category": 1,
+      "type": "ELECTRONICS",
+      "price": 48000,
+      "photo": "images/asus-vivobook.png",
+      "brand": 7,
+      "warranty": "2 Years Warranty",
+      "seller": 2,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 4,
+    "fields": {
+      "name": "Beats Headphones model-013",
+      "category": 5,
+      "type": "ELECTRONICS",
+      "price": 3650,
+      "photo": "images/beats-headphones.png",
+      "brand": 4,
+      "warranty": "1 Years Warranty",
+      "seller": 2,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 5,
+    "fields": {
+      "name": "Sony Headphones model-777",
+      "category": 5,
+      "type": "ELECTRONICS",
+      "price": 4500,
+      "photo": "images/sony-headphones.png",
+      "brand": 6,
+      "warranty": "1 Years Warranty",
+      "seller": 3,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 5,
+    "fields": {
+      "name": "Sony Headphones model-mdr-x",
+      "category": 5,
+      "type": "ELECTRONICS",
+      "price": 5700,
+      "photo": "images/sony-mdr-x.png",
+      "brand": 6,
+      "warranty": "2 Years Warranty",
+      "seller": 3,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 6,
+    "fields": {
+      "name": "Anker 737 power bank",
+      "category": 4,
+      "type": "MOBILE_PHONE_ACCESSORIES",
+      "price": 2500,
+      "photo": "images/anker-power-bank.png",
+      "brand": 8,
+      "warranty": "2 Years Warranty",
+      "seller": 4,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 7,
+    "fields": {
+      "name": "Joyroom JR-W010 power bank",
+      "category": 4,
+      "type": "MOBILE_PHONE_ACCESSORIES",
+      "price": 3200,
+      "photo": "images/joyroom-power-bank.png",
+      "brand": 9,
+      "warranty": "2 Years Warranty",
+      "seller": 4,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 7,
+    "fields": {
+      "name": "Galaxy A23 6/128|Samsung",
+      "category": 3,
+      "type": "ELECTRONICS",
+      "price": 31599,
+      "photo": "images/galaxy-a23.png",
+      "brand": 1,
+      "warranty": "2 Years Warranty",
+      "seller": 5,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 8,
+    "fields": {
+      "name": "iPhone 14 pro max",
+      "category": 3,
+      "type": "ELECTRONICS",
+      "price": 196599,
+      "photo": "images/iphone-14.png",
+      "brand": 10,
+      "warranty": "2 Years Warranty",
+      "seller": 5,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 9,
+    "fields": {
+      "name": "Apple Watch Series 7",
+      "category": 2,
+      "type": "LIFE_STYLE",
+      "price": 39500,
+      "photo": "images/apple-watch-7.png",
+      "brand": 10,
+      "warranty": "2 Years Warranty",
+      "seller": 5,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 10,
+    "fields": {
+      "name": "Samsung Galaxy Watch 4",
+      "category": 2,
+      "type": "LIFE_STYLE",
+      "price": 31890,
+      "photo": "images/samsung-watch.png",
+      "brand": 1,
+      "warranty": "2 Years Warranty",
+      "seller": 5,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  },
+  {
+    "model": "products.Product",
+    "pk": 11,
+    "fields": {
+      "name": "Sony SmartWatch 1",
+      "category": 2,
+      "type": "LIFE_STYLE",
+      "price": 45000,
+      "photo": "images/sony-watch.png",
+      "brand": 6,
+      "warranty": "2 Years Warranty",
+      "seller": 5,
+      "created_at": "2023-05-25T10:30:00Z"
+
+    }
+  }
+]

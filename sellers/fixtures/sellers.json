@@ -1,0 +1,42 @@
+[
+  {
+    "model": "sellers.Seller",
+    "pk": 1,
+    "fields": {
+      "name": "Smart Technology",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "sellers.Seller",
+    "pk": 2,
+    "fields": {
+      "name": "Global Computers",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "sellers.Seller",
+    "pk": 3,
+    "fields": {
+      "name": "Star tech",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "sellers.Seller",
+    "pk": 4,
+    "fields": {
+      "name": "Ryans",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "sellers.Seller",
+    "pk": 5,
+    "fields": {
+      "name": "ImtiazTech",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  }
+]

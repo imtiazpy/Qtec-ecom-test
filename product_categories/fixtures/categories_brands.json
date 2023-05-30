@@ -1,0 +1,122 @@
+[
+  {
+    "model": "product_categories.Category",
+    "pk": 1,
+    "fields": {
+      "name": "Laptops",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Category",
+    "pk": 2,
+    "fields": {
+      "name": "Watches",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Category",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphones",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Category",
+    "pk": 4,
+    "fields": {
+      "name": "Power banks",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Category",
+    "pk": 5,
+    "fields": {
+      "name": "Headphones",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 1,
+    "fields": {
+      "name": "Samsung",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 2,
+    "fields": {
+      "name": "HP",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 3,
+    "fields": {
+      "name": "Dell",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 4,
+    "fields": {
+      "name": "Beats",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 5,
+    "fields": {
+      "name": "Bose",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 6,
+    "fields": {
+      "name": "Sony",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 7,
+    "fields": {
+      "name": "Asus",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 8,
+    "fields": {
+      "name": "Anker",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 9,
+    "fields": {
+      "name": "Joyroom",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  },
+  {
+    "model": "product_categories.Brand",
+    "pk": 10,
+    "fields": {
+      "name": "Apple",
+      "created_at": "2023-05-25T10:30:00Z"
+    }
+  }
+]
