@@ -36,7 +36,7 @@ This command will build the Docker image and create the necessary containers for
 
 5. Open your web browser and access the project at [http://localhost:8000](http://localhost:8000).
 
-6. (Optional) To populate the database with initial data, open another terminal or command prompt and run the following commands:
+6. (Optional) To populate the database with initial data, open another terminal or command prompt and run the following commands. You must strictly follow the order in which these commands are executed:
 
 - Categories and Brands:
 
@@ -68,9 +68,23 @@ These commands will execute the respective `loaddata` commands within the Docker
 
 4. Install project dependencies: pipenv install
 
-5. Apply the database migrations: python manage.py migrate
+5. Set up the Environment Variables:
 
-6. (Optional) Populate the database with initial data:
+   - Create a `.env` file in the project's root directory.
+   
+   - Copy the contents of `env.example` into the newly created `.env` file.
+   
+   - Generate a secret key using any online Django Secret Key generator.
+   
+   - Replace the value of `SECRET_KEY` with the newly generated secret key in the `.env` file. (no space between between variable, = and value)
+   
+     ```
+     SECRET_KEY=your_secret_key_here
+     ```
+
+6. Apply the database migrations: python manage.py migrate
+
+6. (Optional) Populate the database with initial data, You must strictly follow the order in which these commands are executed:
 
 - Categories and Brands:
 
@@ -96,7 +110,7 @@ These commands will load the fixture data into the database.
 
 8. Open your web browser and access the project at [http://localhost:8000](http://localhost:8000).
 
-9. (Optional) To stop the Django development server, press `Ctrl + C` in the terminal or command prompt.
+9. To stop the Django development server, press `Ctrl + C` in the terminal or command prompt.
 
 
 
