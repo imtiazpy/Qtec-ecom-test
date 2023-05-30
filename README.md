@@ -74,8 +74,13 @@ These commands will execute the respective `loaddata` commands within the Docker
    
    - Copy the contents of `env.example` into the newly created `.env` file.
    
-   - Generate a secret key using any online Django Secret Key generator.
+   - Generate a secret key using any online Django Secret Key generator. or
+
+   - You can run this command: 
    
+     ```
+     python manage.py shell -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+     ```
    - Replace the value of `SECRET_KEY` with the newly generated secret key in the `.env` file. (no space between between variable, = and value)
    
      ```
