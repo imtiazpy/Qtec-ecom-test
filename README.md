@@ -30,7 +30,7 @@ git clone https://github.com/your-username/project.git
 
 3. Navigate to the project's root directory: cd project
 
-4. Build the Docker image and start the containers: docker-compose up
+4. Build the Docker image and start the containers: sudo docker-compose up
 
 This command will build the Docker image and create the necessary containers for the project. It will also start the Django development server.
 
@@ -77,7 +77,7 @@ These commands will execute the respective `loaddata` commands within the Docker
    - Generate a secret key using any online Django Secret Key generator. or
 
    - You can run this command: 
-   
+
      ```
      python manage.py shell -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
      ```
