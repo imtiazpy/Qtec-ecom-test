@@ -13,7 +13,7 @@ Short project description.
 
 Before running the project, make sure you have the following installed on your machine:
 
-- Python 3.9
+- Python 3.10
 - Pipenv
 - (Optional) Docker and Docker Compose
 
@@ -26,7 +26,14 @@ Follow the instructions below to get the project up and running.
 1. Install Docker and Docker Compose on your machine. You can download Docker Desktop from the official Docker website: [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 
 2. Clone the project repository:
-git clone https://github.com/your-username/project.git 
+  - a. Clone using SSH:
+     ```bash
+     git clone git@github.com:imtiazpy/ecom-multi-filter.git
+     ```
+   - b. Clone using HTTPS:
+     ```bash
+     git clone https://github.com/imtiazpy/ecom-multi-filter.git
+     ```
 
 3. Navigate to the project's root directory: cd project
 
@@ -60,7 +67,15 @@ These commands will execute the respective `loaddata` commands within the Docker
 
 ### Running without Docker
 
-1. Clone the project repository: git clone https://github.com/your-username/project.git
+1. Clone the project repository:
+  - a. Clone using SSH:
+    ```bash
+    git clone git@github.com:imtiazpy/ecom-multi-filter.git
+    ```
+  - b. Clone using HTTPS:
+    ```bash
+    git clone https://github.com/imtiazpy/ecom-multi-filter.git
+    ```
 
 2. Navigate to the project's root directory: cd project
 
@@ -118,6 +133,8 @@ These commands will load the fixture data into the database.
 9. To stop the Django development server, press `Ctrl + C` in the terminal or command prompt.
 
 
+## End Notes
 
+For any doubts or questions, feel free to contact me at imtiazahmed.py@gmail.com.
 
-
+For collaboration or team work, please email me at imtiazahmed.py@gmail.com. I would be happy to discuss further opportunities.
